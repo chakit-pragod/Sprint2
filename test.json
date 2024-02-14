@@ -1,0 +1,80 @@
+import { test, expect } from '@playwright/test';
+
+test('test01', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+});
+
+test('test02', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'th', exact: true }).click();
+});
+
+test('test03', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'id' }).click();
+});
+
+test('test04', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'gb', exact: true }).click();
+});
+
+test('test05', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Clothes' }).click();
+    await page.getByRole('link', { name: 'th', exact: true }).click();
+});
+
+test('test06', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Clothes' }).click();
+    await page.getByRole('link', { name: 'id', exact: true }).click();
+});
+
+test('test07', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Clothes' }).click();
+    await page.getByRole('link', { name: 'gb', exact: true }).click();
+});
+
+test('test08', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Accessories', exact: true }).click();
+    await page.getByRole('link', { name: 'th', exact: true }).click();
+});
+
+test('test09', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Accessories', exact: true }).click();
+    await page.getByRole('link', { name: 'id', exact: true }).click();
+});
+
+test('test10', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Accessories', exact: true }).click();
+    await page.getByRole('link', { name: 'gb', exact: true }).click();
+});
+
+test('test11', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Art' }).click();
+    await page.getByRole('link', { name: 'th', exact: true }).click();
+});
+
+test('test12', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Art' }).click();
+    await page.getByRole('link', { name: 'id', exact: true }).click();
+});
+
+test('test13', async ({ page }) => {
+    await page.goto('http://localhost:8080/gb/');
+    await page.getByRole('link', { name: 'Art' }).click();
+    await page.getByRole('link', { name: 'gb', exact: true }).click();
+});
+
+test('test14', async ({ page }) => {
+    await page.goto('http://localhost:8080/th/3-clothes');
+    await page.click('gb');
+    expect(page.url()).toBe('http://localhost:8080/id/3-clothes');
+});
