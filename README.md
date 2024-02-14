@@ -19,3 +19,7 @@ https://docs.google.com/document/d/1SOa70I4f7Vj-MLtYS8DUP92mFxtJ7vu0/edit?usp=sh
 **Presentation**
 
 https://www.canva.com/design/DAF8wUQV428/gt7T80HS4RVq85T39-RZSw/edit?utm_content=DAF8wUQV428&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+**Sprint blocklog**
+
+https://docs.google.com/spreadsheets/d/1C4zEZ1-YTBQ1t3C8fuRRblm4ebjPhcdB/edit?usp=sharing&ouid=116638849119616253572&rtpof=true&sd=true
